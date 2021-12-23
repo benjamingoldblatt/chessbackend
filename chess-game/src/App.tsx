@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./Home"
+import Game from "./Game"
 import Chessboard from "chessboardjsx";
 import { ChessInstance, ShortMove } from "chess.js";
 
