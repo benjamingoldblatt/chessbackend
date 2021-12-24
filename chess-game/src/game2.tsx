@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Home"
-import Game from "./Game"
 import Chessboard from "chessboardjsx";
 import { ChessInstance, ShortMove } from "chess.js";
 
@@ -16,6 +13,7 @@ const App: React.FC = () => {
   const [fen, setFen] = useState(chess.fen());
 
   const handleMove = (move: ShortMove) => {
+    
     if (chess.move(move)) {
       setTimeout(() => {
         const moves = chess.moves();
@@ -46,6 +44,7 @@ const App: React.FC = () => {
         }
       />
     </div>
+    
   );
 };
 

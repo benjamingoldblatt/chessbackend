@@ -4,11 +4,11 @@ export default class Game extends React.Component {
         super();
         this.state = { token };
         this.engine = new Chess();
-    }
-
-    render() {
-        return (
-                 
+    };
+    
+    //render() {
+        //return (
+            
         //Player 1: {domain()}/{this.state.p1_token}
         
                     
@@ -24,8 +24,8 @@ export default class Game extends React.Component {
                     
         //{ history(this.state.moves) }
 
-        );
-    }
+        //);
+    //}
     
     // ...
     
