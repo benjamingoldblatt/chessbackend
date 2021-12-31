@@ -6,7 +6,7 @@ import {
 
 import './App.css';
 import Home from './Home';
-import Game from './Game';
+import Token from './Token';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Home/>} />
-        <Route exact path="/:token" element={<Game/>} />
+        <Route exact path="/:token" element={<Token/>} />
       </Routes>
     </BrowserRouter>
   );
