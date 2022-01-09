@@ -2,8 +2,7 @@ import React from 'react';
 import Utils from './utils';
 import {db} from './firebase'
 import {collection, addDoc, Timestamp} from 'firebase/firestore'
-const fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
-const moves = [];
+
 
 export default function() {
     return(
@@ -22,9 +21,7 @@ const createGame = async (e) => {
   };
   try {
     await addDoc(collection(db, 'games'), {
-      players,
-      fen,
-      moves
+      players
     })
     window.location = `/${players.p1_token}`;
     } catch (err) {
